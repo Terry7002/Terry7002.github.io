@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources - ProfoundLearn</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Additional custom styles for resources page -->
+    <style>
+        .resources-section {
+            padding: 80px 0;
+        }
+        
+        .resource-category {
+            margin-bottom: 50px;
+        }
+        
+        .resource-category h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 10px;
+        }
+        
+        .resource-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .resource-item {
+            background-color: white;
+            border-radius: 8px;
+            padding: 25px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        
+        .resource-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .resource-icon {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+        
+        .resource-item h4 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+        
+        .resource-item p {
+            margin-bottom: 15px;
+            color: var(--light-text);
+        }
+        
+        .resource-badge {
+            display: inline-block;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+        
+        .badge-gcse {
+            background-color: #e6f7ff;
+            color: #0070f3;
+        }
+        
+        .badge-alevel {
+            background-color: #ffe6f2;
+            color: #d4006a;
+        }
+        
+        .badge-both {
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        
+        .badge-subject {
+            background-color: #f0f7ff;
+            color: #0055b3;
+        }
+        
+        .resource-tags {
+            margin-bottom: 15px;
+        }
+        
+        .resource-cta {
+            margin-top: 15px;
+        }
+        
+        /* Filter section */
+        .filter-section {
+            background-color: var(--light-bg);
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 40px;
+        }
+        
+        .filter-options {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .filter-group {
+            margin-bottom: 15px;
+        }
+        
+        .filter-group h4 {
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+        
+        .filter-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .filter-btn {
+            padding: 8px 15px;
+            border-radius: 20px;
+            border: 1px solid var(--border-color);
+            background-color: white;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        
+        .filter-btn:hover,
+        .filter-btn.active {
+            background-color: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
+        
+        /* Coming soon section */
+        .coming-soon {
+            text-align: center;
+            padding: 60px 0;
+            background-color: var(--light-bg);
+            border-radius: 8px;
+            margin-bottom: 40px;
+        }
+        
+        .coming-soon i {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+        
+        .coming-soon h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+        
+        .coming-soon p {
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="asset/ProfoundLearn_Logo.png" alt="ProfoundLearn Logo">
+                <h1>ProfoundLearn</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="profound-learn.html#home">Home</a></li>
+                    <li><a href="profound-learn.html#services">Services</a></li>
+                    <li><a href="profound-learn.html#about">About Us</a></li>
+                    <li><a href="profound-learn.html#contact">Contact</a></li>
+                </ul>
+                <div class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" style="background-position: 50% 40%;">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Educational Resources</h1>
+                <p>Access our collection of revision notes, practice questions, and study materials to enhance your learning journey.</p>
+            </div>
+        </div>
+    </section>
+    
+
+
+    <!-- 注意 -->
+     <!-- 注意 -->
+      <!-- 注意 -->
+    <section class="resources-section">
+        <div class="container">
+            <h2 class="section-title">Study Resources</h2>
+            
+            <!-- 添加你需要的上传的文件在这 -->
+            <div class="resource-category">
+                <div class="resource-category">
+                    <h3>Economics Notes</h3>
+                    <div class="resource-grid">
+                        <div class="resource-item">
+                            <div class="resource-icon">
+                                <i class="fas fa-book"></i>
+                            </div>
+                            <h4>Economics - Aggregate Demand</h4>
+                            <div class="resource-tags">
+                                <span class="resource-badge badge-alevel">A-Level</span>
+                                <span class="resource-badge badge-subject">Economics</span>
+                            </div>
+                            <p>Comprehensive notes on aggregate demand, its determinants and economic effects.</p>
+                            <a href="resources/lead to less.pdf" class="btn btn-outline resource-cta" download>Download PDF</a>
+                        </div>
+                        <div class="resource-item" style="display: none;">
+                            <div class="resource-icon">
+                                <i class="fas fa-book"></i>
+                            </div>
+                            <h4>Economics - Market Structures</h4>
+                            <div class="resource-tags">
+                                <span class="resource-badge badge-alevel">A-Level</span>
+                                <span class="resource-badge badge-subject">Economics</span>
+                            </div>
+                            <p>Detailed notes on perfect competition, monopoly, and oligopoly market structures.</p>
+                            <a href="resources/market-structures.pdf" class="btn btn-outline resource-cta" download>Download PDF</a>
+                        </div>
+                    </div>
+
+                    <div class="resource-category" style="display: none;">
+                        <h3>Physics Notes</h3>
+                        <div class="resource-grid">
+                            <div class="resource-item">
+                                <div class="resource-icon">
+                                    <i class="fas fa-atom"></i>
+                                </div>
+                                <h4>Physics - Mechanics</h4>
+                                <div class="resource-tags">
+                                    <span class="resource-badge badge-alevel">A-Level</span>
+                                    <span class="resource-badge badge-subject">Physics</span>
+                                </div>
+                                <p>Comprehensive notes on Newton's laws, momentum, and energy conservation.</p>
+                                <a href="resources/mechanics.pdf" class="btn btn-outline resource-cta" download>Download PDF</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>ProfoundLearn</h3>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="profound-learn.html#home">Home</a></li>
+                        <li><a href="profound-learn.html#services">Services</a></li>
+                        <li><a href="profound-learn.html#about">About Us</a></li>
+                        <li><a href="profound-learn.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="profound-learn.html#tutoring">Tutoring</a></li>
+                        <li><a href="profound-learn.html#camps">Camps</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:JakeJ0411@outlook.com">JakeJ0411@outlook.com</a></p>
+                    <p><i class="fas fa-phone-alt"></i> <a href="tel:07908718819">07908718819</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i> London, UK</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ProfoundLearn. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- Additional script for resource page functionality -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Filter functionality will be implemented here
+            // This is just a placeholder for future functionality
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Find all buttons in the same group and remove 'active' class
+                    const groupButtons = this.parentElement.querySelectorAll('.filter-btn');
+                    groupButtons.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Add 'active' class to the clicked button
+                    this.classList.add('active');
+                    
+                    // Filter logic will be implemented when resources are ready
+                });
+            });
+        });
+    </script>
+</body>
+</html>
